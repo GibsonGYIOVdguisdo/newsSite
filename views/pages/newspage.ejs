@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include("../partials/head.ejs")%>
+<body>
+    <%-include("../partials/header.ejs")%>
+    <p class="newsTitle"><%=newsTitle%></p>
+    <div class="outerNewsDiv">
+        <div>
+            <div class="previews">
+                <%for (let i = 0; i < previews.length; i++){%>
+                    <div class="preview">
+                        <%=previews[i][0]%>
+                    </div>
+                <%}%>
+            </div>
+            <div class="innerNewsDiv">
+                <p class="newsContent"><%=newsContent%></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
